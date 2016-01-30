@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/fromDateBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/feedback_padding"
+            android:layout_weight="1"
+            android:background="@drawable/date_button"
+            android:gravity="center"
+            android:text="@string/text_from_date"
+            android:textColor="@color/theme_color" />
+
+        <TextView
+            android:id="@+id/toDateBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/feedback_padding"
+            android:layout_weight="1"
+            android:background="@drawable/date_button"
+            android:gravity="center"
+            android:text="@string/text_to_date"
+            android:textColor="@color/theme_color" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/feedback_padding"
+            android:background="@drawable/search_button"
+            android:src="@drawable/search_ic"
+            android:text="Search" />
+    </LinearLayout>
+
+    <com.hb.views.PinnedSectionListView
+        android:id="@+id/lvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:visibility="gone" >
+    </com.hb.views.PinnedSectionListView>
+
+    <ImageView
+        android:id="@+id/ivEmptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:src="@drawable/no_items" />
+
+</LinearLayout>

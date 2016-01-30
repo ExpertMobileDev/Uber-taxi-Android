@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.automated.taxinow.component.MyFontPopUpTextView
+            android:id="@+id/tvTourDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector"
+            android:gravity="center"
+            android:padding="@dimen/dimen_history_margin_left"
+            android:text="@string/text_desc"
+            android:textColor="@color/white" />
+
+        <com.automated.taxinow.component.MyFontPopUpTextView
+            android:id="@+id/tvTourFullDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_bill_margin_three"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector"
+            android:gravity="center"
+            android:padding="@dimen/dimen_history_margin_left"
+            android:text="@string/text_full_day"
+            android:textColor="@color/white" />
+
+        <com.automated.taxinow.component.MyFontPopUpTextView
+            android:id="@+id/tvTourHalfDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_bill_margin_three"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector"
+            android:gravity="center"
+            android:padding="@dimen/dimen_history_margin_left"
+            android:text="@string/text_half_day"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.automated.taxinow.component.MyFontButton
+        android:id="@+id/btnBookTour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_pickup"
+        android:gravity="center"
+        android:text="@string/book_full_day"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

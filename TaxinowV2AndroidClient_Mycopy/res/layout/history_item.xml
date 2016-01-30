@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_margin_register"
+    android:paddingLeft="@dimen/dimen_history_image_padding"
+    android:paddingRight="@dimen/dimen_history_image_padding"
+    android:paddingTop="@dimen/activity_margin_register"
+    tools:context=".adapter.HistoryAdapter" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.mikhaellopez.circularimageview.CircleImageView
+            android:id="@+id/ivHistoryIcon"
+            android:layout_width="@dimen/dimen_history_image_width"
+            android:layout_height="@dimen/dimen_history_image_height"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_history_margin_left"
+            android:src="@drawable/default_user"
+            app:border_color="@color/white"
+            app:border_width="@dimen/dimen_history_padding" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/progressbar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_history_margin_left"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.automated.taxinow.component.MyFontHistoryTextView
+            android:id="@+id/tvHistoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_history_one"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_app_gray"
+            android:textStyle="bold" />
+
+        <com.automated.taxinow.component.MyTitleFontTextView
+            android:id="@+id/tvHistoryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_history_one"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_app_gray" />
+
+        <!-- <com.automated.taxinow.driver.widget.MyFontTextView -->
+        <!-- android:id="@+id/tvHistoryBio" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="Medium Text" -->
+        <!-- android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/dimen_history_padding"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical" >
+
+        <com.automated.taxinow.component.MyTitleFontTextView
+            android:id="@+id/tvHistoryCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/color_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

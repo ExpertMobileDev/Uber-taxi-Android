@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin_register">5dp</dimen>
+    <dimen name="activity_margin_mainscreen">30dp</dimen>
+    <dimen name="activity_margin_feedback">20dp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="rating_min_height">16dip</dimen>
+    <dimen name="rating_max_height">16dip</dimen>
+    <dimen name="padding_button_text">40dp</dimen>
+    <dimen name="image_type_height_width">90dp</dimen>
+
+    <integer name="margin_marker">150</integer>
+
+    <dimen name="width">65dp</dimen>
+    <dimen name="height">65dp</dimen>
+    <dimen name="menu_item_size">11dp</dimen>
+    <dimen name="history_image">45dp</dimen>
+
+    <!-- Towber Resolution -->
+    <dimen name="map_margin_bottom">44dp</dimen>
+    <dimen name="gridview_height">230dp</dimen>
+    <dimen name="margin_legt_name_star">120dp</dimen>
+
+    <!-- Newly Added for Profile Screen -->
+
+    <dimen name="dimen_profile_margin_left">40dp</dimen>
+    <dimen name="dimen_profile_margin_top">-10dp</dimen>
+    <dimen name="dimen_profile_padding">25dp</dimen>
+    <dimen name="dimen_profile_image_height">75dp</dimen>
+    <dimen name="dimen_profile_padding_bottom">50dp</dimen>
+    <dimen name="dimen_profile_image_width">75dp</dimen>
+    <dimen name="dimen_profile_textsize">25sp</dimen>
+
+    <!-- Newly Added For History Item -->
+
+    <dimen name="dimen_history_margin_left">8dp</dimen>
+    <dimen name="dimen_history_margin_top">5dp</dimen>
+    <dimen name="dimen_history_image_height">50dp</dimen>
+    <dimen name="dimen_history_image_width">50dp</dimen>
+    <dimen name="dimen_history_image_padding">20dp</dimen>
+    <dimen name="dimen_history_padding">2dp</dimen>
+    <dimen name="dimen_history_one">10dp</dimen>
+
+    <!-- Popup Menu Padding -->
+    <dimen name="padding_top">15dp</dimen>
+    <dimen name="font_size_popup">12.5sp</dimen>
+
+    <!-- Big Popup -->
+    <dimen name="popup_margin_left">30dp</dimen>
+    <dimen name="popup_margin_top">40dp</dimen>
+    <dimen name="popup_margin_top_first_notification">40dp</dimen>
+    <dimen name="popup_margin_top_between_notification">18dp</dimen>
+    <dimen name="popup_margin_left_image">22dp</dimen>
+    <dimen name="popup_margin_text">10dp</dimen>
+    <dimen name="font_size_popup_big">13.5sp</dimen>
+    <!-- Newly Added for Bill Layout -->
+
+    <dimen name="dimen_bill_margin_one">10dp</dimen>
+    <dimen name="dimen_bill_margin_two">5dp</dimen>
+    <dimen name="dimen_bill_margin_three">2dp</dimen>
+    <dimen name="dimen_bill_padding_one">20dp</dimen>
+    <dimen name="dimen_bill_padding_two">20dp</dimen>
+    <dimen name="dimen_bill_text">20sp</dimen>
+    <dimen name="dimen_bill_line">7dp</dimen>
+    <dimen name="dimen_bill_second_top">5dp</dimen>
+    <dimen name="dimen_invoice_text">18sp</dimen>
+    <dimen name="dimen_invoice_baseprice">15sp</dimen>
+    <dimen name="invoice_base_price_small">10sp</dimen>
+    <dimen name="dimen_top_minus">-55dp</dimen>
+    <dimen name="invoice_price_font">20sp</dimen>
+
+    <!-- Newly Added for Feedback Screen -->
+    <dimen name="dimen_feedback_image_width">80dp</dimen>
+    <dimen name="dimen_feedback_image_height">80dp</dimen>
+    <dimen name="dimen_feedback_margin_left">135dp</dimen>
+    <dimen name="dimen_feedback_image_left">35dp</dimen>
+    <dimen name="dimen_feedback_text">20sp</dimen>
+    <dimen name="feedback_rating_min_height">18dip</dimen>
+    <dimen name="feedback_rating_max_height">18dip</dimen>
+    <dimen name="feedback_margin">10dp</dimen>
+    <dimen name="feedback_padding">5dp</dimen>
+    <dimen name="feedback_margin_one">5dp</dimen>
+    <dimen name="feedback_margin_two">10dp</dimen>
+    <dimen name="feedback_margin_three">5dp</dimen>
+    <dimen name="feedback_text_size">15sp</dimen>
+
+    <!-- Menu -->
+
+    <dimen name="menu_img_width">85dp</dimen>
+    <dimen name="menu_img_height">85dp</dimen>
+
+    <!-- Newly Added for Forgot Password -->
+    <dimen name="dimen_fp_margin">15dp</dimen>
+    <dimen name="dimen_fp_margin_top">20dp</dimen>
+    <dimen name="fp_font_size">20sp</dimen>
+    <dimen name="driver_photo_size">80dp</dimen>
+    <dimen name="service_selection_width">134dp</dimen>
+    <dimen name="pin_minute_value">11sp</dimen>
+    <dimen name="pin_minute_text">6.5sp</dimen>
+
+</resources>

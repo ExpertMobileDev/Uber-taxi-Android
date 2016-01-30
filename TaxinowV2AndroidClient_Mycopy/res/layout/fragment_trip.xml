@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/maptrip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/source_fill_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <AutoCompleteTextView
+                android:id="@+id/etEnterDestination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/search_icon"
+                android:drawablePadding="5dp"
+                android:hint="DESTINATION"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ub_textsize_search_big" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageButton
+                android:id="@+id/imgClearDst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/dimen_fp_margin"
+                android:src="@drawable/close_button"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnAddDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/feedback_padding"
+            android:background="@drawable/source"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnCancelTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/feedback_padding"
+            android:background="@drawable/cancel_trip" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:id="@+id/layoutCardDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layoutCash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/payment_selector"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_fp_margin"
+                android:text="@string/text_cash"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/feedback_text_size" />
+
+            <ImageView
+                android:id="@+id/imgSelectedCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_ic"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/theme_color" />
+
+        <LinearLayout
+            android:id="@+id/layoutCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/payment_selector"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/ivCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/feedback_padding"
+                android:paddingBottom="@dimen/dimen_fp_margin"
+                android:paddingTop="@dimen/dimen_fp_margin"
+                android:src="@drawable/ub__creditcard_mastercard" />
+
+            <TextView
+                android:id="@+id/tvCardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_fp_margin"
+                android:paddingLeft="@dimen/feedback_padding"
+                android:paddingTop="@dimen/dimen_fp_margin"
+                android:text="TextView"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/feedback_text_size" />
+
+            <ImageView
+                android:id="@+id/imgSelectedCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_fp_margin"
+                android:src="@drawable/right_ic"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/include_detail_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:id="@+id/tvJobTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_register"
+                android:drawableLeft="@drawable/clock"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="0 mins"
+                android:textAllCaps="true"
+                android:textColor="@color/darkgray" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/line_divider" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:id="@+id/tvJobDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_margin_register"
+                android:drawableLeft="@drawable/mile"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="0 kms"
+                android:textAllCaps="true"
+                android:textColor="@color/darkgray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

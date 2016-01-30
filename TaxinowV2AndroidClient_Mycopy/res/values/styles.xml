@@ -1,0 +1,67 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- <item name="android:editTextBackground">@drawable/ub__edit_text_holo_light</item> -->
+        <!-- <item name="android:windowBackground">@color/ub__bg_white</item> -->
+        <!-- <item name="android:windowContentOverlay">@drawable/ub__actionbar_shadow</item> -->
+        <!-- <item name="android:progressBarStyleHorizontal">@style/Uber.Widget.ProgressBar</item> -->
+        <item name="android:ratingBarStyle">@style/customRatingBar</item>
+        <!-- <item name="android:actionBarStyle">@style/Uber.Widget.ActionBar</item> -->
+        <!-- <item name="android:actionButtonStyle">@style/Uber.Widget.ActionButtonStyle</item> -->
+        <!-- <item name="android:actionOverflowButtonStyle">@style/Uber.Widget.ActionButtonOverflow</item> -->
+        <!-- <item name="android:editTextBackground">@drawable/ub__edit_text_holo_light</item> -->
+        <!-- <item name="android:actionBarItemBackground">@drawable/ub__action_bar_item_bg</item> -->
+        <!-- <item name="actionBarStyle">@style/ActionBarCompat</item> -->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/rating_max_height</item>
+        <item name="android:indeterminateDrawable">@drawable/ub__star</item>
+        <item name="android:progressDrawable">@drawable/ub__star</item>
+        <item name="android:minHeight">@dimen/rating_min_height</item>
+    </style>
+
+    <style name="feedbackRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/feedback_rating_max_height</item>
+        <item name="android:indeterminateDrawable">@drawable/ub_star_feedback</item>
+        <item name="android:progressDrawable">@drawable/ub_star_feedback</item>
+        <item name="android:minHeight">@dimen/feedback_rating_min_height</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/FadeDialogAnimation</item>
+    </style>
+
+    <style name="FadeDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="CustomSeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/custom_seek_bar</item>
+        <item name="android:thumb">@drawable/taxi_pickup</item>
+        <item name="android:minHeight">@dimen/feedback_padding</item>
+        <item name="android:maxHeight">@dimen/dimen_history_margin_left</item>
+    </style>
+
+</resources>

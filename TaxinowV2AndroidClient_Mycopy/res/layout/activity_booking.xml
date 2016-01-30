@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_booking"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/spnTourPackage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/half_day_tour_bg" />
+
+            <Spinner
+                android:id="@+id/spnTourType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin"
+                android:background="@drawable/half_day_tour_bg" />
+
+            <Spinner
+                android:id="@+id/spnTourSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin"
+                android:background="@drawable/half_day_tour_bg" />
+
+            <Spinner
+                android:id="@+id/spnTourPersons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin"
+                android:background="@drawable/half_day_tour_bg" />
+
+            <TextView
+                android:id="@+id/txtTourDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin"
+                android:background="@drawable/half_day_tour_bg"
+                android:gravity="center_vertical"
+                android:text="@string/text_booking_date"
+                android:paddingLeft="@dimen/dimen_fp_margin"
+                android:textColor="@color/theme_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.automated.taxinow.component.MyTitleFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Tarrif"
+            android:textColor="@color/tour_text_gray" />
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:id="@+id/tvTotalTarrif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R3302"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/dimen_profile_textsize" />
+    </LinearLayout>
+
+    <com.automated.taxinow.component.MyFontButton
+        android:id="@+id/btnBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_pickup"
+        android:gravity="center"
+        android:text="BOOK TOUR"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+</LinearLayout>

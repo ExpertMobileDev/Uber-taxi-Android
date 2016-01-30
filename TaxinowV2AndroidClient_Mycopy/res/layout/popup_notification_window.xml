@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPopupWindow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="5dp" >
+
+    <!--
+         <ImageView
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/popup" />
+    -->
+
+    <com.automated.taxinow.component.MyFontPopUpTextView
+        android:id="@+id/tvPopupMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/popup"
+        android:gravity="center"
+        android:paddingTop="18dp"
+        android:text="@string/text_driver_started"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/font_size_popup" />
+
+</RelativeLayout>

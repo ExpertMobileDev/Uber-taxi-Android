@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_fp_margin_top"
+            android:paddingTop="@dimen/dimen_fp_margin_top"
+            android:text="You will be charge "
+            android:textSize="@dimen/dimen_invoice_baseprice" />
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:id="@+id/txtTotalFareQuate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_fp_margin_top"
+            android:paddingTop="@dimen/dimen_fp_margin_top"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/fp_font_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_color" />
+
+    <Button
+        android:id="@+id/btnOKFareQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="OK" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_color" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_margin_feedback"
+            android:text="@string/dialog_exit_caps"
+            android:textColor="@color/color_app_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_divider_line" />
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_margin_feedback"
+            android:text="@string/dialog_exit_text"
+            android:textColor="@color/color_app_gray"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_mainscreen"
+            android:orientation="horizontal" >
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:id="@+id/tvExitOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_register"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_small"
+                android:gravity="center"
+                android:text="@android:string/yes"
+                android:textColor="@color/white" />
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:id="@+id/tvExitCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_register"
+                android:layout_marginRight="@dimen/activity_margin_register"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_small"
+                android:gravity="center"
+                android:text="@string/text_cancel"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

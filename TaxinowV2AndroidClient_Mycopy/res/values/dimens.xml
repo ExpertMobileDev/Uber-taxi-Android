@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin_register">5dp</dimen>
+    <dimen name="activity_margin_mainscreen">30dp</dimen>
+    <dimen name="activity_margin_feedback">20dp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="rating_min_height">19dip</dimen>
+    <dimen name="rating_max_height">19dip</dimen>
+    <dimen name="image_type_height_width">50dp</dimen>
+    <dimen name="drawer_font_size">15.0sp</dimen>
+    <dimen name="ub_view_margin">10.0dip</dimen>
+    <dimen name="ub_search_padding_medium">16.0dip</dimen>
+    <dimen name="ub_textsize_search_small">12.0sp</dimen>
+    <dimen name="ub_textsize_search_big">15.0sp</dimen>
+    <dimen name="ub_textsize_extra_big">45.0sp</dimen>
+    <dimen name="ub_textsize_big">35.0sp</dimen>
+    <dimen name="ub_textsize_medium">18.0sp</dimen>
+    <dimen name="ub_textsize_small">13.0sp</dimen>
+    <dimen name="margin_left_right_bill">20dip</dimen>
+    <dimen name="ub_textsize_huge">60.0sp</dimen>
+
+</resources>

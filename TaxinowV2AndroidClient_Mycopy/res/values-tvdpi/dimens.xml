@@ -1,0 +1,4 @@
+<resources>   
+    <dimen name="pin_minute_value">11.5sp</dimen>
+    <dimen name="pin_minute_text">7sp</dimen>
+</resources>

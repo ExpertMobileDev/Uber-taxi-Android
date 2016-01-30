@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPopupWindow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/popup_margin_text"
+    android:background="@drawable/big_popup"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/popup_margin_left"
+        android:layout_marginTop="@dimen/popup_margin_top"
+        android:background="@null"
+        android:src="@drawable/notification_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top_first_notification"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivJobAccepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popup_margin_left_image"
+                android:background="@null"
+                android:src="@drawable/un_checkbox" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvJobAccepted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/popup_margin_text"
+                android:layout_marginRight="@dimen/popup_margin_text"
+                android:text="@string/text_job_accepted"
+                android:textColor="@color/color_text_popup"
+                android:textSize="@dimen/font_size_popup_big"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top_between_notification"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/ivDriverStarted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popup_margin_left_image"
+                android:background="@null"
+                android:src="@drawable/un_checkbox" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvDriverStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/popup_margin_text"
+                android:layout_marginRight="@dimen/popup_margin_text"
+                android:text="@string/text_driver_started"
+                android:textColor="@color/color_text_popup"
+                android:textSize="@dimen/font_size_popup_big"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top_between_notification"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivDriverArrvied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popup_margin_left_image"
+                android:background="@null"
+                android:src="@drawable/un_checkbox" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvDriverArrvied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/popup_margin_text"
+                android:layout_marginRight="@dimen/popup_margin_text"
+                android:text="@string/text_driver_arrvied"
+                android:textColor="@color/color_text_popup"
+                android:textSize="@dimen/font_size_popup_big"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top_between_notification"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivTripStarted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popup_margin_left_image"
+                android:background="@null"
+                android:src="@drawable/un_checkbox" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvTripStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/popup_margin_text"
+                android:layout_marginRight="@dimen/popup_margin_text"
+                android:text="@string/text_trip_started"
+                android:textColor="@color/color_text_popup"
+                android:textSize="@dimen/font_size_popup_big"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top_between_notification"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivTripCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popup_margin_left_image"
+                android:background="@null"
+                android:src="@drawable/un_checkbox" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvTripCompleted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/popup_margin_text"
+                android:layout_marginRight="@dimen/popup_margin_text"
+                android:text="@string/text_trip_completed"
+                android:textColor="@color/color_text_popup"
+                android:textSize="@dimen/font_size_popup_big"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

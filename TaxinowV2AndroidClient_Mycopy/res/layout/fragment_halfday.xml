@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ivEmptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@null"
+        android:src="@drawable/no_items"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/layoutFullDay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.automated.taxinow.component.MyAppTitleFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_profile_margin_top"
+                android:background="@drawable/schedule_title"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_fp_margin_top"
+                android:text="@string/text_tour_highlights"
+                android:textColor="@color/theme_color" />
+
+            <com.automated.taxinow.component.MyTitleFontTextView
+                android:id="@+id/tvHDayHightLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_fp_margin"
+                android:layout_marginTop="@dimen/dimen_fp_margin"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_fp_margin_top"
+                android:text="-sdfsf sdfk sdfksd fsdkf sdf\n-sadfsadfsadf sadfks dfksadf sadf\n-sadfsadfsadf sadfks dfksadf sadf "
+                android:textColor="@color/tour_text_gray" />
+
+            <com.automated.taxinow.component.MyAppTitleFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/schedule_title"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_fp_margin_top"
+                android:text="@string/text_schedule"
+                android:textColor="@color/theme_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_fp_margin_top" >
+
+                <com.automated.taxinow.component.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_morning"
+                    android:textColor="@color/theme_color" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow>
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/text_departure"
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvTourTiming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text=" : "
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvMorningDTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="8h30"
+                            android:textColor="@color/tour_text_gray" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/text_return"
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvTourTiming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text=" : "
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvMorningRTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="8h30"
+                            android:textColor="@color/tour_text_gray" />
+                    </TableRow>
+                </TableLayout>
+
+                <com.automated.taxinow.component.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/feedback_padding"
+                    android:text="@string/text_afternoon"
+                    android:textColor="@color/theme_color" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow>
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/text_departure"
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvTourTiming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text=" : "
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvAfterDTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="8h30"
+                            android:textColor="@color/tour_text_gray" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/text_return"
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text=" : "
+                            android:textColor="@color/tour_text_gray" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvAfterRtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="8h30"
+                            android:textColor="@color/tour_text_gray" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <com.automated.taxinow.component.MyAppTitleFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/schedule_title"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_fp_margin_top"
+                android:text="@string/text_tarrif"
+                android:textColor="@color/theme_color" />
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_fp_margin"
+                android:layout_marginTop="@dimen/dimen_fp_margin"
+                android:paddingLeft="@dimen/dimen_fp_margin_top"
+                android:text="@string/text_common_tour"
+                android:textColor="@color/theme_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_fp_margin_top"
+                android:layout_marginRight="@dimen/dimen_fp_margin_top"
+                android:orientation="horizontal" >
+
+                <com.automated.taxinow.component.MyTitleFontTextView
+                    android:id="@+id/tvHdayCommonPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comman_tour_box"
+                    android:gravity="center"
+                    android:text="R810"
+                    android:textColor="@color/tour_text_gray"
+                    android:textSize="16sp" />
+
+                <com.automated.taxinow.component.MyTitleFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_fp_margin"
+                    android:background="@drawable/comman_tour_box"
+                    android:gravity="center"
+                    android:text="Per Person"
+                    android:textColor="@color/tour_text_gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_fp_margin"
+                android:layout_marginTop="@dimen/dimen_fp_margin"
+                android:paddingLeft="@dimen/dimen_fp_margin_top"
+                android:text="@string/private_luxury_tour"
+                android:textColor="@color/theme_color" />
+
+            <TableLayout
+                android:id="@+id/tblHdayPrivateTours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_fp_margin_top"
+                android:layout_marginRight="@dimen/dimen_fp_margin_top" >
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

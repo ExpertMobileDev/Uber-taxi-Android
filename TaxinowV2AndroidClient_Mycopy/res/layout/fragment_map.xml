@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/mapFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/map_margin_bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_fp_margin"
+            android:layout_marginRight="@dimen/dimen_fp_margin"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/source_fill_box"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/etEnterSouce"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/search_icon"
+                    android:drawablePadding="5dp"
+                    android:hint="PICK UP ADDRESS"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ub_textsize_search_big" >
+
+                    <requestFocus />
+                </AutoCompleteTextView>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/dimen_fp_margin"
+                    android:src="@drawable/close_button"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/source_line"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutBubble"
+            android:layout_gravity="center"
+            layout="@layout/my_marker"
+            tools:ignore="IncludeLayoutParam" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/feedback_padding"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/btnMyLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ub_button_mylocation" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnFareInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fare_info" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFareQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/theme_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/theme_color" />
+
+                    <com.automated.taxinow.component.MyFontTextView
+                        android:id="@+id/tvFareQuote"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/dimen_history_margin_top"
+                        android:drawableTop="@drawable/credit_icon"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dimen_history_margin_top"
+                        android:paddingTop="@dimen/dimen_history_margin_top"
+                        android:text="@string/text_fare_quote"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/font_size_popup_big"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/theme_color" />
+
+                    <com.automated.taxinow.component.MyFontTextView
+                        android:id="@+id/tvPromoCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/dimen_history_margin_top"
+                        android:drawableTop="@drawable/promo_code_icon"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dimen_history_margin_top"
+                        android:paddingTop="@dimen/dimen_history_margin_top"
+                        android:text="@string/text_promo_code"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/font_size_popup_big"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/theme_color" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/theme_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCardDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ivCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/feedback_padding"
+                    android:src="@drawable/ub__creditcard_mastercard" />
+
+                <TextView
+                    android:id="@+id/tvNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_popup_big" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/feedback_padding"
+                    android:src="@drawable/credit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+    <!--
+         <com.automated.taxinow.component.MyFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_pickup"
+        android:text="@string/text_select_service"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+    -->
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridview_height"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/gvTypes"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:handle="@+id/btnSelectService"
+        android:visibility="visible" >
+
+        <com.automated.taxinow.component.MyFontButton
+            android:id="@+id/btnSelectService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pickup"
+            android:text="@string/text_select_service"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <GridView
+            android:id="@+id/gvTypes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_select_service"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:numColumns="2"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="10dip" />
+    </SlidingDrawer>
+
+    <Button
+        android:id="@+id/btnSendRequestDesti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_fp_margin"
+        android:background="@drawable/btn_submit"
+        android:text="@string/text_request"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/feedback_padding"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/llServiceText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_history_margin_left"
+            android:layout_marginRight="@dimen/dimen_history_margin_left"
+            android:orientation="horizontal" >
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="right" -->
+            <!-- android:text="Standerd" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:gravity="right" -->
+            <!-- android:text="Laxury" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:gravity="right" -->
+            <!-- android:text="1231 212cxc fd" /> -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutRgService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_fp_margin"
+        android:layout_marginTop="@dimen/dimen_fp_margin"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/linearPointer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/feedback_padding"
+            android:layout_marginLeft="@dimen/dimen_history_margin_left"
+            android:layout_marginRight="@dimen/dimen_history_margin_left"
+            android:layout_marginTop="@dimen/feedback_padding"
+            android:orientation="horizontal" >
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:drawableStart="@drawable/pickup_round" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:drawableStart="@drawable/pickup_round" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:drawableStart="@drawable/pickup_round" /> -->
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/CustomSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:max="100" />
+
+        <LinearLayout
+            android:id="@+id/linearPointer2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/feedback_padding"
+            android:layout_marginLeft="@dimen/dimen_history_margin_left"
+            android:layout_marginRight="@dimen/dimen_history_margin_left"
+            android:layout_marginTop="@dimen/feedback_padding"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:drawableStart="@drawable/pickup_round" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:drawableStart="@drawable/pickup_round" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:drawableStart="@drawable/pickup_round" /> -->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

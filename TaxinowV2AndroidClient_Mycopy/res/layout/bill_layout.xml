@@ -1,0 +1,379 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bill_trans"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_top_minus"
+            android:background="@drawable/bg_bill"
+            android:gravity="center_horizontal" >
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="33.5dp"
+                android:drawableTop="@drawable/bill_paper"
+                android:text="@string/text_invoice"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_invoice_text" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_bill_margin_one"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_bill_padding_one"
+                    android:paddingRight="@dimen/dimen_bill_padding_two" >
+
+                    <com.automated.taxinow.component.MyFontTextView
+                        android:id="@+id/tvBasePriceText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_two"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/text_base_price"
+                        android:textColor="@color/color_app_gray"
+                        android:textSize="@dimen/dimen_invoice_baseprice"
+                        android:textStyle="bold" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="$"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:id="@+id/tvBasePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="60.00"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_bill_padding_one"
+                    android:paddingRight="@dimen/dimen_bill_padding_two" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_two"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.automated.taxinow.component.MyFontTextView
+                            android:id="@+id/tvDistCost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:text="@string/text_distance_cost"
+                            android:textColor="@color/color_app_gray"
+                            android:textSize="@dimen/dimen_invoice_baseprice"
+                            android:textStyle="bold" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvBillDistancePerMile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:text="@string/text_base_price"
+                            android:textColor="@color/color_app_gray"
+                            android:textSize="@dimen/invoice_base_price_small" />
+                    </LinearLayout>
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="$"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:id="@+id/tvDis1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_bill_padding_one"
+                    android:paddingRight="@dimen/dimen_bill_padding_two" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_two"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.automated.taxinow.component.MyFontTextView
+                            android:id="@+id/tvTimeCost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:text="@string/text_time_cost"
+                            android:textColor="@color/color_app_gray"
+                            android:textSize="@dimen/dimen_invoice_baseprice"
+                            android:textStyle="bold" />
+
+                        <com.automated.taxinow.component.MyTitleFontTextView
+                            android:id="@+id/tvBillTimePerHour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:text="@string/text_base_price"
+                            android:textColor="@color/color_app_gray"
+                            android:textSize="@dimen/invoice_base_price_small" />
+                    </LinearLayout>
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="$"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:id="@+id/tvTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_bill_padding_one"
+                    android:paddingRight="@dimen/dimen_bill_padding_two" >
+
+                    <com.automated.taxinow.component.MyFontTextView
+                        android:id="@+id/tvReferralBonusText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_two"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/text_referral_bonus"
+                        android:textColor="@color/color_app_gray"
+                        android:textSize="@dimen/dimen_invoice_baseprice"
+                        android:textStyle="bold" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="$"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:id="@+id/tvReferralBonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_bill_padding_one"
+                    android:paddingRight="@dimen/dimen_bill_padding_two" >
+
+                    <com.automated.taxinow.component.MyFontTextView
+                        android:id="@+id/tvPromoBonusText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_two"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/text_promo_bonus"
+                        android:textColor="@color/color_app_gray"
+                        android:textSize="@dimen/dimen_invoice_baseprice"
+                        android:textStyle="bold" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="$"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:id="@+id/tvPromoBonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/invoice_price_font" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_bill_padding_one"
+                android:paddingRight="@dimen/dimen_bill_padding_two" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_bill_second_top"
+                    android:gravity="center"
+                    android:text="@string/text_total"
+                    android:textColor="@color/color_app_gray"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_bill_margin_three"
+                        android:gravity="center"
+                        android:text="$"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/dimen_bill_text" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:id="@+id/tvTotal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="60.00"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/dimen_bill_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:gravity="bottom" >
+
+        <com.automated.taxinow.component.MyFontButton
+            android:id="@+id/btnBillDialogClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bill"
+            android:text="@string/text_close"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

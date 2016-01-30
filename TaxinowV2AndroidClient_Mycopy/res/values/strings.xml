@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Taxi Now</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_fname">FIRST NAME</string>
+    <string name="text_lname">LAST NAME</string>
+    <string name="text_email">EMAIL</string>
+    <string name="text_number">NUMBER</string>
+    <string name="text_passs">PASSWORD</string>
+    <string name="text_pass_current">CURRENT PASSWORD</string>
+    <string name="text_pass_new">NEW PASSWORD</string>
+    <string name="text_pass_retype">CONFIRM NEW PASSWORD</string>
+    <string name="text_address">ADDRESS</string>
+    <string name="text_bio">BIO</string>
+    <string name="text_zip">ZIPCODE</string>
+    <string name="text_google">GOOGLE</string>
+    <string name="text_facebook">FACEBOOK</string>
+    <string name="text_next">NEXT</string>
+    <string name="text_signin">SIGN IN</string>
+    <string name="text_mything">MY THING</string>
+    <string name="text_desc1">AGE</string>
+    <string name="text_desc2">TYPE</string>
+    <string name="text_comment">Leave a comment</string>
+    <string name="text_register">REGISTER</string>
+    <string name="text_credit_card_number">CREDIT CARD NUMBER</string>
+    <string name="text_credit_card_holder">CREDIT CARD HOLDER</string>
+    <string name="text_mm">MM</string>
+    <string name="text_yy">YYYY</string>
+    <string name="text_cvc">CVC</string>
+    <string name="text_addpayment">ADD PAYMENT</string>
+    <string name="text_submit">SUBMIT</string>
+    <string name="text_apply">APPLY</string>
+    <string name="text_or">OR</string>
+    <string name="text_forgetpass">FORGOT PASSWORD ?</string>
+    <string name="text_scan">SCAN</string>
+    <string name="text_contacting">CONTACTING NEARBY DRIVERS</string>
+    <string name="text_waiting_for_confirm">WAITING FOR DRIVER TO CONFIRM YOUR TRIP</string>
+    <string name="text_creating_request">CREATING REQUEST</string>
+    <string name="text_changing_default_card">CHANGING DEFAULT CARD</string>
+    <string name="text_changing_payment_mode">CHANGING PAYMENT MODE</string>
+    <string name="text_canceling_request">CANCELING REQUEST</string>
+    <string name="text_adding_dest">ADDING DESTINATION</string>
+    <string name="text_registering">REGISTERING</string>
+    <string name="text_rating">RATING</string>
+    <string name="text_apply_promo">APPLYING PROMO CODE</string>
+    <string name="text_cancel">CANCEL</string>
+    <string name="text_pickmeup">Set pickup location</string>
+    <string name="text_contact">CONTACT DRIVER</string>
+    <string name="text_name">NAME</string>
+    <string name="text_gallary">GALLERY</string>
+    <string name="text_camera">CAMERA</string>
+    <string name="text_call">CALL</string>
+    <string name="text_choosepicture">CHOOSE PICTURE</string>
+    <string name="text_getting_direction">GETTING DIRECTIONS</string>
+    <string name="text_update">UPDATE</string>
+    <string name="text_my_location">My Location</string>
+    <string name="text_drive_location">Driver Location</string>
+    <string name="text_miles">KM</string>
+    <string name="text_mins">MINS</string>
+    <string name="progress_loading">LOADING </string>
+    <string name="toast_register_success">You have successfully been registered</string>
+    <string name="toast_update_success">Profile updated successfully</string>
+    <string name="dialog_logout">Log out</string>
+    <string name="dialog_logout_text">Are you sure you want to logout?</string>
+    <string name="profile">PROFILE</string>
+    <string name="payment">PAYMENT</string>
+    <string name="adding_payment">ADDING PAYMENT</string>
+    <string name="text_getting_ref_code">GETTING REFERRAL CODE </string>
+    <string name="text_please_wait">PLEASE WAIT </string>
+    <string name="text_getting_tours">GETTING TOURS </string>
+    <string name="text_booking_tours">BOOKING TOURS </string>
+    <string name="text_share">SHARE</string>
+    <string name="text_share_app">Share app!</string>
+    <string name="text_rate_ride">RATE YOUR RIDE</string>
+    <string name="payment_unit">$</string>
+    <string name="text_for">for</string>
+    <string name="text_per">/</string>
+    <string name="text_min">min</string>
+
+    <!-- <string-array name="menu_items"> -->
+    <!-- <item>PROFILE</item> -->
+    <!-- <item>MY THINGS</item> -->
+
+
+    <!-- <item>PAYMENT</item> -->
+    <!-- <item>PROMOTIONS</item> -->
+    <!-- <item>SHARE</item> -->
+    <!-- <item>SUPPORT</item> -->
+    <!-- <item>ABOUT</item> -->
+    <!-- <item>LOGOUT</item> -->
+    <!-- </string-array> -->
+
+    <string name="text_sedan">SEDAN</string>
+    <string name="text_bike">BIKE</string>
+    <string name="text_enter_email">Please enter email id</string>
+    <string name="text_enter_password">Please enter password</string>
+    <string name="text_enter_password_valid">Password should be at least 6 charater long</string>
+    <string name="text_getting_info">Getting Info </string>
+    <string name="text_wait">Wait</string>
+    <string name="text_enter_valid_email">Please enter valid email id</string>
+    <string name="applicationId">747435302018297</string>
+    <string name="text_enter_name">Please enter first name</string>
+    <string name="text_enter_lname">Please enter last name</string>
+    <string name="text_enter_number">Please enter number</string>
+    <string name="text_enter_bio">Please enter bio</string>
+    <string name="text_enter_zip">Please enter zipcode</string>
+    <string name="text_enter_adress">Please enter address</string>
+    <string name="text_pro_pic">Please select profile picture</string>
+    <string name="no_internet">Internet not available</string>
+    <string name="signin_failed">SignIn failed</string>
+    <string name="text_enter_age">Please enter age</string>
+    <string name="text_enter_thingname">Please enter name</string>
+    <string name="text_enter_type">Please enter type</string>
+    <string name="text_enter_notes">Please enter notes</string>
+    <string name="text_location_not_found">Your current location not found</string>
+    <string name="text_waiting_for_address">Waiting for address</string>
+    <string name="text_waiting_for_eta">Waiting for providers</string>
+    <string name="text_limo">LIMO</string>
+    <string name="text_eta">ETA</string>
+    <string name="text_max_size">MAX SIZE</string>
+    <string name="text_min_fare">MIN FARE</string>
+    <string name="text_gettting_request_stat">Getting Request</string>
+    <string name="text_pick_up_location">PICKUP LOCATION</string>
+    <string name="register_gcm">Registering for GCM</string>
+    <string name="register_gcm_failed">Failed to register with GCM</string>
+    <string name="toast_facebook_login_failed">Facebook login failed</string>
+    <string name="toast_register_failed">Registration failed</string>
+    <string name="toast_update_failed">Profile update failed</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_cards">Payment</string>
+    <string name="text_add_payment">Add Payment</string>
+    <string name="text_signin_small">Sign In</string>
+    <string name="text_register_small">Register</string>
+    <string name="text_addpayment_small">Add Payment</string>
+    <string name="dialog_no_internet">No Internet</string>
+    <string name="dialog_no_gps">No GPS</string>
+    <string name="dialog_no_location_service">Please turn on location service from settings, must press on/off toggle and agree to access location and restart an app.\nNote:if you have already done choices with disagree and dont show dialog again then location dialog not show when you press on/off toggle button.to solve this problem you must clear all setting preferences.</string>
+    <string name="dialog_no_location_service_title">Locaton service is off.</string>
+    <string name="dialog_no_inter_message">You have not active internet connection.</string>
+    <string name="dialog_no_gps_messgae">Seems like you have not started your location service.</string>
+    <string name="dialog_enable_gps">Enable GPS</string>
+    <string name="dialog_enable_location_service">Go to location service</string>
+    <string name="dialog_enable_3g">Enable 3G</string>
+    <string name="dialog_enable_wifi">Enable WIFI</string>
+    <string name="dialog_exit">Exit</string>
+    <string name="text_select_type">Please select vehical type.</string>
+    <string name="text_forget_password_success">Your password has been mailed.</string>
+    <string name="text_forget_password_unsuccess">Failed to reset password</string>
+    <string name="text_forget_password_loading_msg">RESETTING PASSWORD </string>
+    <string name="progress_getting_history">GETTING HISTORY</string>
+    <string name="text_history">History</string>
+    <string name="text_get_fare_estimate">GET FARE ESTIMATE</string>
+    <string name="text_rate_card">RATE CARD</string>
+    <string name="text_estimate_fare">This is just an estimate. Actual fares may vary slightly based on traffic or discounts.</string>
+
+    <!-- profile -->
+    <string name="text_edit_profile">EDIT PROFILE</string>
+    <string name="text_update_profile">UPDATE PROFILE</string>
+    <string name="progress_update_profile">UPDATING PROFILE</string>
+    <string name="toast_unable_to_selct_image">unable to select image</string>
+    <string name="your_cards">YOUR CARDS</string>
+    <string name="add_card">Add</string>
+    <string name="toast_email_ivalid">Not a valid email</string>
+    <string name="toast_forget_password_success">Your password would be mailed to your registered email.</string>
+    <string name="text_forget_password">FORGOT PASSWORD</string>
+    <string name="text_invoice">INVOICE</string>
+    <string name="text_base_price">BASE PRICE</string>
+    <string name="text_distance_cost">DISTANCE COST</string>
+    <string name="text_time_cost">TIME COST</string>
+    <string name="text_time">TIME</string>
+    <string name="text_total">TOTAL</string>
+    <string name="text_to_pay">$ TO PAY</string>
+    <string name="text_close">CLOSE</string>
+    <string name="text_confirm">CONFIRM</string>
+    <string name="text_cost_per_mile">$ per km</string>
+    <string name="text_cost_per_hour">$ per hour</string>
+    <string name="text_no_history">No history to display</string>
+    <string name="text_no_card">No cards to display</string>
+    <string name="text_job_accepted">Driver accepted the job</string>
+    <string name="text_driver_started">Driver coming to your location</string>
+    <string name="text_driver_arrvied">Driver has arrived at your location</string>
+    <string name="text_trip_started">Your trip has been started</string>
+    <string name="text_trip_completed">Your trip is completed</string>
+    <string name="text_not_add_card_unscucess">Adding card failed!</string>
+    <string name="text_add_card_scucess">Card added successfully!</string>
+    <string name="text_not_valid_token">Not a valid token or number, please try again!</string>
+    <string name="text_ref_code">Please take a note of your Referral code - </string>
+    <string name="text_enter_ref_code">Enter referral code</string>
+    <string name="text_enter_promo_code">Enter promo code</string>
+    <string name="text_blank_ref_code">Please enter referral code</string>
+    <string name="text_no_card_addedd_yet">No cards on file yet - please add one</string>
+    <string name="text_request">REQUEST</string>
+    <!-- <string name="text_getting_providers">Looking for new cars</string> -->
+    <string name="no_card">You have not select default card for payment</string>
+    <string name="text_source_pin_title">Pick me from here</string>
+    <string name="text_destination_pin_title">Destination</string>
+    <!-- error code -->
+
+    <string name="error_401">Invalid Input</string>
+    <string name="error_402">Email ID already registered</string>
+    <string name="error_403">Invaid username and password</string>
+    <string name="error_404">Not a registered user</string>
+    <string name="error_405">Token expired</string>
+    <string name="error_406">Invalid token</string>
+    <string name="error_407">Walk ID does not matches with Dog ID</string>
+    <string name="error_408">Walk ID not found</string>
+    <string name="error_409">Already rated</string>
+    <string name="error_410">Owner ID not found</string>
+    <string name="error_411">Token and schedule ID does not match</string>
+    <string name="error_412">Schedule ID not found</string>
+    <string name="error_413">Walk not confirmend</string>
+    <string name="error_414">Walk not yet started</string>
+    <string name="error_415">Walk not completed</string>
+    <string name="error_416">Walk already started</string>
+    <string name="error_417">Device type or device token or login by mismatch</string>
+    <string name="text_select_payment">Select your payment method</string>
+    <string name="multiple_card">You can add multiple cards</string>
+    <string name="text_forgot_password">Your password will be sent to your registered email</string>
+    <string name="text_skip">SKIP</string>
+    <string name="text_select_service">SELECT TYPE OF CAR</string>
+    <string name="text_fname_caps">FIRST NAME</string>
+    <string name="text_lname_caps">LAST NAME</string>
+    <string name="text_yesterday">YESTERDAY</string>
+    <string name="text_today">TODAY</string>
+    <string name="text_forget_pass_small">Forgot Password</string>
+    <string name="text_referral_code">Referral code</string>
+    <string name="text_promo_code">Promo code</string>
+    <string name="text_feedback">Feedback</string>
+    <string name="text_feedback_completed">Thank you for feedback!</string>
+    <string name="text_getting_token">Getting token</string>
+    <string name="text_signing">Signing in</string>
+    <string name="payment_mode_cash">Payment mode: Cash</string>
+    <string name="payment_mode_credit">Payment mode: Credit</string>
+    <string name="text_cash">Cash</string>
+    <string name="text_fare_quote">FARE QUOTE</string>
+    <string name="text_from_date">FROM DATE</string>
+    <string name="text_to_date">TO DATE</string>
+    <string name="text_help">Help</string>
+    <string name="text_day_tours">Day Tours</string>
+    <string name="text_desc">Description</string>
+    <string name="text_full_day">Full Day</string>
+    <string name="text_half_day">Half Day</string>
+    <string name="text_tour_highlights">TOUR HIGHLIGHTS</string>
+    <string name="text_schedule">Schedule</string>
+    <string name="text_tarrif">Tariff</string>
+    <string name="text_common_tour">Common Tour</string>
+    <string name="private_luxury_tour">Private Luxury Tour</string>
+    <string name="book_full_day">BOOK FULL DAY TOUR</string>
+    <string name="book_half_day">BOOK HALF DAY TOUR</string>
+    <string name="text_full_day_tour">Full day tour</string>
+    <string name="text_half_day_tour">Half day tour</string>
+    <string name="text_morning">Morning</string>
+    <string name="text_afternoon">Afternoon</string>
+    <string name="text_departure">Departure</string>
+    <string name="text_return">Return</string>
+    <string name="text_tour_success">Tour booked successfully</string>
+    <string name="text_tour_fail">Tour booking failed</string>
+    <string name="text_booking_date">Booking Date</string>
+    <string name="err_referral_invalid">Invalid referral code. Please try again.</string>
+    <string name="msg_err_booking_date">Please select booking date</string>
+    <string name="msg_referral"> You can add referral code provided by your friend here to get free credits. If you do not have one or don\'t want to insert they just click on Skip button below.</string>
+    <string name="text_your_referral_credit">Your referral credit</string>
+    <string name="text_share_referral">Share referral code</string>
+    <string name="text_done">DONE</string>
+    <string name="text_referral_bonus">REFERRAL BONUS</string>
+    <string name="text_promo_bonus">PROMO BONUS</string>
+    <string name="text_card_selection_note">Please click on radio button to select default card.</string>
+    <!-- logout -->
+    <string name="dialog_logout_caps">LOG OUT</string>
+
+    <!-- Exit -->
+    <string name="dialog_exit_caps">EXIT</string>
+    <string name="dialog_exit_text">Are you sure you want to exit?</string>
+    <string name="text_regemail_popup">Please verify your e-mail address, you will not be able to modify it in future.</string>
+    <string name="text_profile_popup">This field is uneditable.</string>
+    <string name="error_valid_email">Please enter valid email address</string>
+    <string name="error_empty_email">Enter email address</string>
+    <string name="error_empty_password">Current password must not be blank</string>
+    <string name="error_empty_retypepassword">You must enter confirm new password</string>
+    <string name="error_valid_password">Password should at least 6 characters long</string>
+    <string name="error_mismatch_password">Your new password and confirm new password do not match</string>
+    <string name="error_empty_rating">Please give rating to driver.</string>
+
+    <string-array name="tourTypes">
+        <item>Full day tour</item>
+        <item>Half day tour</item>
+    </string-array>
+    <string-array name="tourPackage">
+        <item>Common Tour</item>
+        <item>Private Luxury Tour</item>
+    </string-array>
+
+</resources>

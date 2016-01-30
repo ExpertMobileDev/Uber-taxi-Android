@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_margin_register" >
+
+    <com.automated.taxinow.component.MyFontPopUpTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/text_promo_code"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_text" />
+
+    <com.automated.taxinow.component.MyFontPopUpTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/activity_margin_register"
+        android:background="@color/color_text" />
+
+    <com.automated.taxinow.component.MyFontEdittextView
+        android:id="@+id/etPromoCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="@string/text_enter_promo_code"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/dimen_history_one"
+        android:paddingRight="@dimen/dimen_history_one"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/llErrorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_margin_feedback"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/ivPromoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/img_promo_result" />
+
+        <com.automated.taxinow.component.MyFontPopUpTextView
+            android:id="@+id/tvPromoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/err_referral_invalid"
+            android:textColor="@drawable/color_promo_result"
+            android:textSize="@dimen/dimen_invoice_baseprice" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <com.automated.taxinow.component.MyFontButton
+            android:id="@+id/btnPromoSkip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_small"
+            android:gravity="center"
+            android:text="@string/text_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_popup_big" />
+
+        <com.automated.taxinow.component.MyFontButton
+            android:id="@+id/btnPromoSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_small"
+            android:gravity="center"
+            android:text="@string/text_apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_popup_big" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/popup_margin_top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/map_popup"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/markerBubblePickMeUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/feedback_padding" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/time_popup" />
+
+                <ProgressBar
+                    android:id="@+id/pBar"
+                    style="?android:attr/android:progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" >
+
+                    <com.automated.taxinow.component.MyAppTitleFontTextView
+                        android:id="@+id/tvEstimatedTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/pin_minute_value"
+                        android:textStyle="bold" />
+
+                    <com.automated.taxinow.component.MyTitleFontTextView
+                        android:id="@+id/tvDurationUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvEstimatedTime"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="-5dp"
+                        android:maxLength="3"
+                        android:text="MIN"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/pin_minute_text" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.automated.taxinow.component.MyFontTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_bill_margin_three"
+                android:paddingRight="@dimen/dimen_bill_margin_three"
+                android:text="@string/text_pickmeup"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/feedback_padding"
+                android:src="@drawable/arrow_popup" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/popup_down_arrow" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/myCustomMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:src="@drawable/pin_client_org"
+        android:visibility="visible" >
+    </ImageView>
+
+</LinearLayout>

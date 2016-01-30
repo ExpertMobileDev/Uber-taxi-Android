@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="dark_blue">#ff003388</color>
+    <color name="black_label">#ff1e1e1e</color>
+    <color name="skyblue">#51b6dc</color>
+    <color name="red">#ED262A</color>
+    <color name="gray">#888888</color>
+    <color name="darkgray">#555555</color>
+    <color name="pale_black">#333333</color>
+    <color name="pink">#ff69b4</color>
+    <color name="cyan">#73b6fd</color>
+    <color name="twitter">#30D8F0</color>
+    <color name="facebook">#3B5998</color>
+    <color name="light_gray">#CFCFCF</color>
+    <color name="green">#00aa00</color>
+    <color name="yellow">#ffff00</color>
+    <color name="light_gray_full">#dFdFdF</color>
+    <color name="color_edit_text_hint">#cdcdcd</color>
+    <!-- <color name="color_edit_text_hint">#b8b8b8</color> -->
+    <color name="color_radio_button">#555555</color>
+    <color name="color_section_heading">#A4A18E</color>
+    <color name="color_checkbox">#807C6F</color>
+    <color name="color_title_text">#555249</color>
+    <color name="color_light_yellow">#66635a</color>
+    <color name="color_view_text">#555555</color>
+    <color name="color_btn_back">#9A9484</color>
+    <color name="color_driver_price">#ff4986e7</color>
+    <color name="black_trans">#55000000</color>
+    <color name="black_trans_dark">#CC000000</color>
+
+    <drawable name="color_edit_text_hint">#cdcdcd</drawable>
+
+    <color name="color_header">#e1e1e1</color>
+    <color name="color_swipe">#111125</color>
+    <color name="color_pick_up_loc_text">#00b830</color>
+    <color name="app_back_color">#e1e1e1</color>
+    <color name="bill_back_color">#111125</color>
+    <color name="path_color">#ff0000</color>
+
+    <!-- Towber Color -->
+
+    <color name="color_text">#ff9d3d</color>
+    <color name="color_text_popup">#c6c6c6</color>
+    <color name="color_text_menu">#7c7c7c</color>
+    <color name="color_app_gray">#999999</color>
+    <color name="color_text_dark">#676767</color>
+    <color name="color_hint_light">#cdcdcd</color>
+    <color name="theme_color">#3D9FFF</color>
+    <color name="tour_gray_tab">#B9B9B9</color>
+    <color name="tour_text_gray">#6E6E6E</color>
+    <color name="path_color">#EF4136</color>
+
+</resources>

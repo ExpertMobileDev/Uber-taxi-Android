@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPopupWindow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="27dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_popup" >
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:id="@+id/tvPopupMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/text_regemail_popup"
+            android:textColor="@color/color_app_gray" />
+    </LinearLayout>
+
+</RelativeLayout>

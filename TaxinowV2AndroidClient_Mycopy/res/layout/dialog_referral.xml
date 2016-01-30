@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bill_trans"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_margin_register" >
+
+    <com.automated.taxinow.component.MyFontPopUpTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/text_referral_code"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_text" />
+
+    <com.automated.taxinow.component.MyFontPopUpTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/activity_margin_register"
+        android:background="@color/color_text" />
+
+    <com.automated.taxinow.component.MyFontEdittextView
+        android:id="@+id/etRefCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="@string/text_enter_ref_code"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/dimen_history_one"
+        android:paddingRight="@dimen/dimen_history_one"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/llErrorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_margin_feedback"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/img_attention" />
+
+        <com.automated.taxinow.component.MyFontPopUpTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/err_referral_invalid"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen_invoice_baseprice" />
+    </LinearLayout>
+
+    <com.automated.taxinow.component.MyFontPopUpTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_feedback"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/msg_referral"
+        android:textColor="@color/color_app_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <com.automated.taxinow.component.MyFontButton
+            android:id="@+id/btnSkip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_small"
+            android:gravity="center"
+            android:text="@string/text_skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_popup_big" />
+
+        <com.automated.taxinow.component.MyFontButton
+            android:id="@+id/btnRefSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_small"
+            android:gravity="center"
+            android:text="@string/text_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_popup_big" />
+    </LinearLayout>
+
+</LinearLayout>

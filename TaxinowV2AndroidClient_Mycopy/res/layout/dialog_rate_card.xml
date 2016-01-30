@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.automated.taxinow.component.MyFontPopUpTextView
+        android:id="@+id/tvRateVehicleTypeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_pickup"
+        android:gravity="center"
+        android:text="Vehicle Type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_swipe" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_register"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_mainscreen" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Base Price :"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvRateBasePrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_history_one"
+                android:text="$50"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_register"
+            android:orientation="horizontal" >
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Distance Cost :"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvRateDistanceCost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_history_one"
+                android:text="$50"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_register"
+            android:orientation="horizontal" >
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time Cost :"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.automated.taxinow.component.MyFontPopUpTextView
+                android:id="@+id/tvRateTimeCost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_history_one"
+                android:text="$50"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.automated.taxinow.component.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_mainscreen"
+        android:layout_marginRight="@dimen/activity_margin_mainscreen"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="Airport rate may differ. Peak time charges may apply"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_app_gray" />
+
+</LinearLayout>

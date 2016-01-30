@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#FFFFFF" />
+
+    <stroke
+        android:width="@dimen/dimen_history_padding"
+        android:color="@color/theme_color" />
+
+    <padding
+        android:bottom="@dimen/dimen_history_padding"
+        android:left="@dimen/dimen_history_padding"
+        android:right="@dimen/dimen_history_padding"
+        android:top="@dimen/dimen_history_padding" />
+
+</shape>

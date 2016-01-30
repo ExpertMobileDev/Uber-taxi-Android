@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivTourImage"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/menu_img_width"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/servicr_shadow" />
+
+        <com.automated.taxinow.component.MyTitleFontTextView
+            android:id="@+id/tvTourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/dimen_fp_margin"
+            android:shadowColor="@color/color_text_menu"
+            android:shadowRadius="5"
+            android:text="Large Text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/invoice_price_font" />
+    </RelativeLayout>
+
+</LinearLayout>

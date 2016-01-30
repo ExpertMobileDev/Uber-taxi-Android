@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/feedbackView"
+        layout="@layout/include_feedback_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/feedback_margin" >
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/feedback_padding"
+            android:drawableTop="@drawable/clock"
+            android:gravity="center"
+            android:text="Button"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_app_gray" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/line_divider" />
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:id="@+id/tvDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/feedback_padding"
+            android:drawableTop="@drawable/mile"
+            android:gravity="center"
+            android:text="Button"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_app_gray" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/line_divider"
+            android:visibility="gone" />
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/feedback_padding"
+            android:drawableTop="@drawable/task_1"
+            android:gravity="center"
+            android:text="Task 1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_app_gray"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/line_divider"
+            android:visibility="gone" />
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/feedback_padding"
+            android:drawableTop="@drawable/task_2"
+            android:gravity="center"
+            android:text="Task 2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_app_gray"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/feedback_margin"
+            android:background="@drawable/line" />
+
+        <com.automated.taxinow.component.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/feedback_margin_one"
+            android:layout_marginLeft="@dimen/feedback_margin_two"
+            android:layout_marginTop="@dimen/feedback_margin_three"
+            android:text="@string/text_comment"
+            android:textColor="@color/color_app_gray" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/line" />
+
+        <com.automated.taxinow.component.MyFontEdittextView
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feedback_margin_two"
+            android:layout_marginRight="@dimen/feedback_margin_two"
+            android:layout_marginTop="@dimen/feedback_margin_three"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/text_comment"
+            android:lines="4"
+            android:maxLines="4"
+            android:minLines="4"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_app_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+
+        <com.automated.taxinow.component.MyFontButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pickup"
+            android:gravity="center"
+            android:text="@string/text_submit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
